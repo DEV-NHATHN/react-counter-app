@@ -1,25 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Movies from './components/Movies.jsx';
+import Counters from './components/Counters.jsx';
+import NavBar from './components/NavBar.jsx';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+   return (
+      <>
+         <main className="container">
+            <NavBar totalCounters={10} />
+            <header className="App-header">
+               {/* <Counters /> */}
+               <Movies />
+            </header>
+         </main>
+      </>
+   );
 }
 
 export default App;
